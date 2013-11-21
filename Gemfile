@@ -9,7 +9,7 @@ gem 'ruby'
 gem 'pg'
 
 gem 'will_paginate', '~> 3.0'
-gem 'metric_fu'
+# gem 'metric_fu'
 gem 'newrelic_rpm'
 
 gem 'rack-cache'
@@ -30,13 +30,13 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'faker'
+# gem 'faker'
 
 group :development, :test do
   gem 'rspec-rails'
-  gem 'pry-rails'
-  gem 'pry-doc'
-  gem 'pry-debugger'
+  # gem 'pry-rails'
+  # gem 'pry-doc'
+  # gem 'pry-debugger'
   gem 'hirb'
   gem 'sqlite3'
 end
@@ -47,7 +47,7 @@ group :test do
 end
 
 group :development do
-  gem 'better_errors'
+  # gem 'better_errors'
   gem 'binding_of_caller'
 end
 
