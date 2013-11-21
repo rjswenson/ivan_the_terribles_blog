@@ -1,12 +1,16 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
+gem 'ruby'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-gem 'sqlite3'
+
+gem 'will_paginate', '~> 3.0'
+gem 'metric_fu'
+gem 'newrelic_rpm'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -29,6 +33,7 @@ group :development, :test do
   gem 'pry-doc'
   gem 'pry-debugger'
   gem 'hirb'
+  gem 'sqlite3'
 end
 
 group :test do

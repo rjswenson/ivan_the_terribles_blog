@@ -5,5 +5,5 @@
 </section>
 
 <br />
-
+<%= will_paginate @posts, previous_label: h("<"), next_label: h(">") %>
 <%= link_to 'New Post', new_post_path %>
