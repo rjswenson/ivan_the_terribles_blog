@@ -60,6 +60,7 @@ GEM
     coffee-script-source (1.6.2)
     colored (1.2)
     columnize (0.3.6)
+    dalli (2.6.4)
     debug_inspector (0.0.2)
     debugger (1.6.0)
       columnize (>= 0.3.1)
@@ -89,6 +90,7 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.0)
     json_pure (1.8.0)
+    kgio (2.8.1)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -98,6 +100,7 @@ GEM
       fattr (>= 2.2.0)
       map (>= 5.1.0)
     map (6.5.1)
+    memcachier (0.0.2)
     method_source (0.8.1)
     metric_fu (4.6.0)
       cane (~> 2.5, >= 2.5.2)
@@ -225,15 +228,19 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   coffee-rails (~> 3.2.1)
+  dalli
   faker
   hirb
   jquery-rails
+  kgio
+  memcachier
   metric_fu
   newrelic_rpm
   pg
   pry-debugger
   pry-doc
   pry-rails
+  rack-cache
   rails (= 3.2.13)
   rspec-rails
   ruby

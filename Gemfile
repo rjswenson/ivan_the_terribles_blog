@@ -12,6 +12,11 @@ gem 'will_paginate', '~> 3.0'
 gem 'metric_fu'
 gem 'newrelic_rpm'
 
+gem 'rack-cache'
+gem 'dalli'
+gem 'kgio'
+gem 'memcachier'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
