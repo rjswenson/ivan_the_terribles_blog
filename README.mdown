@@ -6,4 +6,5 @@ as best as possible.
 
 Version
 =======
-1 - pagination:
+1 - pagination:  3,650 ms
+
