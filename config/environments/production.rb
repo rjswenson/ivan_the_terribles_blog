@@ -50,7 +50,7 @@ config.static_cache_control = "public, max-age=2592000"
   # config.cache_store = :mem_cache_store
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server
-  config.action_controller.asset_host = "d38md5ufyex7gy.cloudfront.net"
+  # config.action_controller.asset_host = "d38md5ufyex7gy.cloudfront.net"
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
   # config.assets.precompile += %w( search.js )
