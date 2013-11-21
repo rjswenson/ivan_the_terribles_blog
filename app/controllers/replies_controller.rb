@@ -22,14 +22,13 @@ class RepliesController < ApplicationController
 
   def update
     @reply = Reply.find(params[:id])
-
-
-      if @reply.update_attributes(params[:reply])
-        redirect_to @reply, notice: 'Reply was successfully updated.'
-      else
-        render action: "edit"
-      end
+    if @reply.update_attributes(params[:reply])
+      redirect_to @reply, notice: 'Reply was successfully updated.'
+    else
+      render action: "edit"
+    end
   end
+
   def destroy
     @reply = Reply.find(params[:id])
     @reply.destroy
