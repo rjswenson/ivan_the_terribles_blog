@@ -71,6 +71,9 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.0)
+    kaminari (0.15.0)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     kgio (2.8.1)
     mail (2.5.4)
       mime-types (~> 1.16)
@@ -164,6 +167,7 @@ DEPENDENCIES
   figaro
   hirb
   jquery-rails
+  kaminari
   kgio
   memcachier
   newrelic_rpm
