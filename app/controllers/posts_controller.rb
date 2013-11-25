@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.page(params[:page]).per_page(100)
+    @posts = Post.search(params[:search]).page(params[:page]).per(15)
   end
   def show
     @post = Post.find(params[:id])
