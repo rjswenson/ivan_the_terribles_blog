@@ -9,12 +9,13 @@ class Post < ActiveRecord::Base
   def self.search(search)
     if search
       search.strip
-      #safe
-      #find(:all, :conditions => ['title like ?', "%#{search}%"])
-      #where("title like ?", "%#{search}%")
-      #
-      #unsafe - SQL injection
-      includes(comments: :replies).where("title like '%#{search}%'")
+
+      # Never include string interpolation directly.
+      find(:all, :conditions => ['title like ?', "%#{search}%"])
+      where("title like ?", "%#{search}%")
+
+      # unsafe - SQL injection
+      # includes(comments: :replies).where("title like ?", '%#{search}%')
     else
       includes(comments: :replies).order("updated_at DESC")
     end
