@@ -1,10 +1,20 @@
-# Terrible Blog
+## Terrible Blog
 
 This blog was scaffolded together and populated.
 The goal is to get loading times down on the index
 as best as possible.
 
+Security
+--------
+Security is also of importance for this app.  To protect vs XSS and SQL injection.
+```
+gem 'brakeman'
+```
+
+![brakeman](/app/assets/images/brakeman.jpeg "Brakeman Works")
+
 Version
 =======
-1 - pagination:  3,650 ms
+1 startpoint:  over 40 seconds
+1 pagination:  3,650 ms
 
